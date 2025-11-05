@@ -24,7 +24,7 @@ load_dotenv()
 # -------------------------------
 # 🌐 API Key Setup
 # -------------------------------
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["GOOGLE_API_KEY"] = st.secrets.get('GOOGLE_API_KEY')
 
 # -------------------------------
 # 🧠 Model Initialization
